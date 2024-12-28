@@ -2,7 +2,7 @@ import math
 
 import torch
 from torch import nn
-#目标 把形状为([T])的时间步 embedding 为 [T,emb_size]
+#目标 把形状为([batch_size])的时间步 embedding 为 [batch_size,emb_size]
 class TimeEmbedding(nn.Module):
     def __init__(self,emb_size):
         super().__init__()
